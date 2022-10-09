@@ -679,6 +679,7 @@ color: var(--main-link-cl);
     transition: visibility 500ms, opacity 500ms;
 }
 .modal {
+    padding: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -708,6 +709,15 @@ color: var(--main-link-cl);
     width: 30px;
     height: 30px;
     cursor: pointer;
+}
+label{
+    display: block;
+}
+textarea{
+    resize: none;
+}
+.contract-check{
+    color: #188CE8;
 }
 /* OVERLAY */
 .card-overlay{
