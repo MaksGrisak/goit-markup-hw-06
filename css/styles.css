@@ -782,6 +782,8 @@ color: var(--main-link-cl);
     width: 30px;
     height: 30px;
     cursor: pointer;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms;    
 }
 .modal-btn:hover,
 .modal-btn:focus,
@@ -835,7 +837,7 @@ color: var(--main-link-cl);
 .register-form-input:focus{
     border-color: #2196F3;
 }
-.register-form-input:hover
+.register-form-input:hover + .register-form-icon,
 .register-form-input:focus + .register-form-icon{
     fill: #2196f3;
 }
