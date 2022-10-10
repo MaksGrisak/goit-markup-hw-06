@@ -871,6 +871,8 @@ color: var(--main-link-cl);
     height: 120px;
     padding: 16px 12px;
     color: hsl(0, 0%, 50%);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .register-form-message:hover,
@@ -880,18 +882,14 @@ color: var(--main-link-cl);
 .register-form-checkbox{
     width: 16px;
     height: 15px;
+    border: solid 1px #212121;
     
 }
 .register-form-desc{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
     color: #757575;
 }
 .registered-form-link{
+    text-decoration-line: underline;
     color: #2196F3;
 }
 .register-form-btn{
@@ -910,6 +908,37 @@ color: var(--main-link-cl);
 .register-form-btn:hover,
 .register-form-btn:focus{
     background-color: #188CE8;
+}
+.icon-checked {
+opacity: 0;
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-unchecked {
+opacity: 1;
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.register-form-checkbox:checked + 
+.register-form-icons .icon-checked {
+opacity: 1;
+}
+
+.register-form-checkbox:checked + 
+.register-form-icons .icon-unchecked {
+opacity: 0;
+}
+.visually-hidden {
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
 }
 /* OVERLAY */
 .card-overlay{
