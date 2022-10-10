@@ -103,19 +103,6 @@
         <section class="section-office section-how-we-work">
             <div class="container work-container">
                 <h2 class="section-title">Чим ми займаємося</h2>
-                <!-- <div class="how-we-work-list">
-                    <div class="how-we-work-list__item">
-                        <img class="img-how-we-work" src="./images/box1.jpg" alt="howwework" width="370" height="300">
-                        <div class="maks"><p class="grisak">sdfdsf</p></div>
-                        
-                    </div>
-                    <div class="how-we-work-list__item">
-                        <img class="img-how-we-work" src="./images/box2.jpg" alt="how-we-work" width="370" height="300">
-                    </div>
-                    <div class="how-we-work-list__item">
-                        <img class="img-how-we-work" src="./images/box3.jpg" alt="how-we-work" width="370" height="300">
-                    </div>
-                </div> -->
                 <ul class="how-we-work-list">
                     <div class="work-box">
                     <li class="how-we-work-list__item"><img class="img-how-we-work" src="./images/box1.jpg" alt="howwework" width="370" height="300"></li>
@@ -474,21 +461,21 @@
                 <div class="register-form-group" role="group">
                     <label class="register-form-field">
                         <span class="register-form-label">Ім'я</span>
-                        <input class="register-form-input" type="text" name="user-name" placeholder="Antony Black" required>
+                        <input class="register-form-input" type="text" name="user-name"  required>
                         <svg class="register-form-icon" width="22" height="22">
                             <use href="./images/icon.svg/modal-icon.svg#person-modal"></use>
                         </svg>
                     </label>
                     <label class="register-form-field">
                         <span class="register-form-label">Телефон</span>
-                        <input class="register-form-input" type="text" name="user-phone" placeholder="+38 099 999 99 99" minlength="12" maxlength="12" required>
+                        <input class="register-form-input" type="text" name="user-phone" minlength="12" maxlength="12" required>
                         <svg class="register-form-icon" width="22" height="22">
                             <use href="./images/icon.svg/modal-icon.svg#phone-modal"></use>
                         </svg>
                     </label>
                     <label class="register-form-field">
                         <span class="register-form-label">Пошта</span>
-                        <input class="register-form-input" type="email" name="user-email" placeholder="exemple@mail.com" required>
+                        <input class="register-form-input" type="email" name="user-email" required>
                         <svg class="register-form-icon" width="22" height="22">
                             <use href="./images/icon.svg/modal-icon.svg#email-modal"></use>
                         </svg>
@@ -498,7 +485,8 @@
                         <span class="register-form-label">Коментар</span>
                         <textarea class="register-form-message" name="user-message" rows="5" placeholder="Введіть текст"> </textarea>
                     </label>
-                </div>               
+                </div> 
+                <form>     
                     <label class="register-form-agreement">
                         <input class="register-form-checkbox visually-hidden" type="checkbox" id="user-agreement" name="user-agreement" required>
                         <svg class="register-form-icons" width="16" height="15">
@@ -507,8 +495,7 @@
                         </svg>
                         <span class="register-form-desc">Погоджуюся з розсилкою та приймаю <a class="registered-form-link" href="">Умови договору</a></span>
                     </label>            
-                <button class="register-form-btn" type="submit">Відправити</button>
-               
+                <button class="register-form-btn" type="submit">Відправити</button>  
             </form>
         </div>
     </div>
