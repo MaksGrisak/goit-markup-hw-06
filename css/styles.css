@@ -577,7 +577,7 @@ color: var(--secondary-txt-cl);
 .input-footer {
 padding-left: 16px;
 width: 358px;
-height: 50px;
+height: 40px;
 background-color: transparent;
 color: var(--light-bgk);
 border: 1px solid rgba(255, 255, 255, 0.3);
@@ -586,7 +586,10 @@ border-radius: 4px;
 transition-property: border-color;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+color: #FFFFFF;
+
 }
+
 
 
 .btn-footer {
@@ -752,7 +755,7 @@ color: var(--main-link-cl);
     transition: visibility 500ms, opacity 500ms;
 }
 .modal {
-    padding: 20px 35px;
+    padding: 40px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -809,7 +812,7 @@ color: var(--main-link-cl);
 .register-form-field{
     position: relative;
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 .register-form-label{
     display: block;
@@ -863,6 +866,7 @@ color: var(--main-link-cl);
     gap: 5px;
 }
 .register-form-message{
+    display: block;
     resize: none;
     outline: transparent;
     border: solid 1px hsl(0, 0%, 20%);
